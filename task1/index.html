@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        .container {
+            width: 100%;
+        }
+        .container > form > .field {
+            display: inline-block;
+            margin-top: 0.8rem;
+        }
+        .container > form > input[type="submit"]{
+            margin-top: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="index.php" method="get">
+            <label for="name" class="field">Name:</label><br>
+            <input type="text" name="name" id="name" required><br>
+            
+            <label for="contact" class="field">Contact:</label><br>
+            <input type="text" name="contact" id="contact" required><br>
+
+            <label class="field">Bussiness Type:</label><br>
+            <input type="radio" id="service" name="bussiness_type" value="Service">
+            <label for="service">Service</label><br>
+            <input type="radio" id="merchandising" name="bussiness_type" value="Merchandising">
+            <label for="merchandising">Merchandising</label><br>
+            <input type="radio" id="manufacturing" name="bussiness_type" value="Manufacturing">
+            <label for="manufacturing">Manufacturing</label><br>
+    
+            <label for="phone_number" class="field">Phone Number:</label><br>
+            <input type="tel" name="phone_number" id="phone_number" pattern="[0-9]{10}" placeholder="1234567890" required>
+            
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
